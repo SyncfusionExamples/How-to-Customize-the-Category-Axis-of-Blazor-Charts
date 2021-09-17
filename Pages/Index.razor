@@ -1,0 +1,58 @@
+﻿@page "/"
+
+ <SfChart Width="60%">
+     <ChartSeriesCollection>
+         <ChartPrimaryXAxis IsIndexed="true" ValueType="Syncfusion.Blazor.Charts.ValueType.Category"
+                            LabelPlacement="LabelPlacement.OnTicks" 
+                            Maximum="5" Minimum="1" Interval="2" >
+         </ChartPrimaryXAxis>
+         <ChartSeries Type="ChartSeriesType.Column" DataSource="@ChartData" XName="Country"
+                      YName="Value">
+         </ChartSeries>
+         @*<ChartSeries DataSource="@WeatherReports1" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
+         </ChartSeries>
+         <ChartSeries DataSource="@WeatherReports2" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
+         </ChartSeries>*@
+         <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+     </ChartSeriesCollection>
+ </SfChart>
+
+@code {
+
+    public class ChartDataModel
+    {
+        public string Country { get; set; }
+        public double Value { get; set; }
+        public double Temperature { get; set; }
+    }
+
+    List<ChartDataModel> ChartData = new List<ChartDataModel>
+    {
+        new ChartDataModel { Country= "USA", Value= 46 },
+        new ChartDataModel { Country= "GBR", Value= 27 },
+        new ChartDataModel { Country= "CHN", Value= 26 },
+        new ChartDataModel { Country= "UK", Value= 23 },
+        new ChartDataModel { Country= "AUS", Value= 16 },
+        new ChartDataModel { Country= "IND", Value= 36 },
+        new ChartDataModel { Country= "DEN", Value= 12 },
+        new ChartDataModel { Country= "MEX", Value= 20 },
+    };
+
+    List<ChartDataModel> WeatherReports1 = new List<ChartDataModel>
+    {
+         new ChartDataModel{ Country= "Myanmar", Temperature= 7.3 },
+         new ChartDataModel{ Country= "India", Temperature= 7.9 },
+         new ChartDataModel{ Country= "Bangladesh", Temperature= 6.8 },
+         new ChartDataModel{ Country= "Cambodia", Temperature= 7.0 },
+         new ChartDataModel{ Country= "China", Temperature= 6.9 }
+      };
+
+    List<ChartDataModel> WeatherReports2 = new List<ChartDataModel>
+    {
+         new ChartDataModel{ Country= "Poland", Temperature=2.7 },
+         new ChartDataModel{ Country= "Australia", Temperature=2.5 },
+         new ChartDataModel{ Country= "Singapore", Temperature=2.0 },
+         new ChartDataModel{ Country= "Canada", Temperature=1.4 },
+         new ChartDataModel{ Country= "Germany", Temperature=1.8 }
+     };
+}

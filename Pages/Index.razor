@@ -1,21 +1,21 @@
 ﻿@page "/"
 
- <SfChart Width="60%">
-     <ChartSeriesCollection>
-         <ChartPrimaryXAxis IsIndexed="true" ValueType="Syncfusion.Blazor.Charts.ValueType.Category"
-                            LabelPlacement="LabelPlacement.OnTicks" 
-                            Maximum="5" Minimum="1" Interval="2" >
-         </ChartPrimaryXAxis>
-         <ChartSeries Type="ChartSeriesType.Column" DataSource="@ChartData" XName="Country"
-                      YName="Value">
-         </ChartSeries>
-         @*<ChartSeries DataSource="@WeatherReports1" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
-         </ChartSeries>
-         <ChartSeries DataSource="@WeatherReports2" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
-         </ChartSeries>*@
-         <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
-     </ChartSeriesCollection>
- </SfChart>
+<SfChart Width="60%">
+    <ChartSeriesCollection>
+        <ChartPrimaryXAxis IsIndexed="true" ValueType="Syncfusion.Blazor.Charts.ValueType.Category"
+                           LabelPlacement="LabelPlacement.OnTicks"
+                           Maximum="5" Minimum="1" Interval="2">
+        </ChartPrimaryXAxis>
+        <ChartSeries Type="ChartSeriesType.Column" DataSource="@ChartData" XName="Country"
+                     YName="Value">
+        </ChartSeries>
+        @*<ChartSeries DataSource="@WeatherReports1" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
+        </ChartSeries>
+        <ChartSeries DataSource="@WeatherReports2" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
+        </ChartSeries>*@
+        <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
+    </ChartSeriesCollection>
+</SfChart>
 
 @code {
 

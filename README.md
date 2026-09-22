@@ -2,7 +2,7 @@
 
 ## Overview
 
-This sample demonstrates how to customize the category axis in Syncfusion Blazor Charts. The application illustrates how category-based values can be displayed and configured within a chart to improve readability and data presentation. It serves as a reference implementation for developers who need to render categorical data using the Syncfusion Blazor Chart component and modify the appearance or behavior of the chart axis.
+This sample demonstrates how to customize the category axis in Syncfusion [Blazor Chart](https://www.syncfusion.com/blazor-components/blazor-charts). The application illustrates how category-based values can be displayed and configured within a chart to improve readability and data presentation. It serves as a reference implementation for developers who need to render categorical data using the Syncfusion Blazor Chart component and modify the appearance or behavior of the chart axis.
 
 The project is implemented as a Blazor application and focuses specifically on category-axis customization scenarios within chart visualizations.
 

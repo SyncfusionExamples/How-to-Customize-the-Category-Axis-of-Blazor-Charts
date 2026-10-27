@@ -1,0 +1,50 @@
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1:focus {
+    outline: none;
+}
+
+a, .btn-link {
+    color: #0071c1;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid #e51313;
+}
+
+.validation-message {
+    color: #e51313;
+}
+
+.blazor-error-boundary {
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTYiIGhlaWdodD0iNDkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIG92ZXJmbG93PSJoaWRkZW4iPjxjaXJjbGUgY3g9IjI4IiBjeT0iMzUiIHI9IjEwIiBmaWxsPSJyZWQiIC8+PGNpcmNsZSBjeD0iMzAiIGN5PSIyNSIgZmlsbD0ib3JhbmdlIiAvPjxwYXRoIGQ9Ik00My4zNSw1Ny40MDYgTDQ3LjA5LDQzLjY0NzUgTDQ4LjQ1MTgsNDIuMDQgTDUwLjg5ODYsNDMuMzQ1OSBMNTMuNzg5NCw0NC4wMDE4IEw1My41NTMzLDQ3LjMzMDcgTDUyLjM1MTksNTUuOTU3NSBMNTEuNzQ0NCw1Ny4zOTY3IEw1MC43MTU3LDU4LjEzODQgTDUwLjU5NzQsNTguMjQ5MSBMNDguNzM1Niw1OC4yNzI4IEw0Ni42ODMzLDU4LjA5NzEgTDQzLjM1LDU3LjQwNjBaIE00Mi43NjQyLDQyLjY0NjYgTDQxLjQwMTksNDMuMDczNiBMMzguMjMxNCw0NC42NDM4IEwzNy40NTU1LDQ1LjgxMjEgTDM2LjgwNzIsNDcuMTM1OSBMMzQuMzEwNyw0OC4zNTgzIEwzNC4wMzYyLDQ5LjMzMDYgTDM1LjIwNDksNTAuMjY3MiBMMzYuNDY2OSw1MC40MTM3IEwzNy42MDk0LDUwLjE0NTcgTDM4LjUzMDUsNDkuMzk2MyBMMzcuNjE4OSw0OS4wNTA5IEwzNy4zMTQzLDQ3Ljg4NTcgTDM4LjIwMTIsNDcuMDQwMiBMMzkuNzIwOSw0Ny4xMDY2IEw0MC45NTMxLDQ3LjMzOTIgTDQxLjQwNTIsNDcuOTA0MSBMMzkuOTgzNCw0OC45MDYzIEwzOS40ODgxLDQ5LjcwNTIgTDQwLjMzODcsNDkuOTI0NiBMNDEuNzM0Nyw1MC4xMzEyIEw0Mi43NjQyLDQyLjY0NjYgWiIgZmlsbD0iIzNkMTQ0MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTcuMjM5MjMzNSwgLTMuMDIyMzkzOCkgc2NhbGUoMC44NzYzNykgc2NhbGUoMC44NzYzNykiIG9wYWNpdHk9IjAuMzUiIC8+PC9zdmc+) no-repeat 1rem 1rem / 3rem 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 4.6rem;
+    min-height: 4rem;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }

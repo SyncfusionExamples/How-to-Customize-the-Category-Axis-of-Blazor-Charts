@@ -17,7 +17,7 @@ The project is implemented as a Blazor application and focuses specifically on c
 ## Prerequisites
 
 - Visual Studio 2022 or Visual Studio Code
-- .NET SDK compatible with the project's target framework
+- .NET 10.0 SDK
 
 ## How to Run the Project
 

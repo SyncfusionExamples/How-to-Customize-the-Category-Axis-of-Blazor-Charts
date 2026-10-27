@@ -1,0 +1,68 @@
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    appearance: none;
+    border: none;
+    display: none;
+}
+
+    .navbar-toggler:checked + .nav-scrollable {
+        display: block;
+    }
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler::before {
+    content: "\2630";
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1;
+}
+
+.nav-scrollable {
+    height: calc(100vh - 3.5rem);
+    overflow-y: auto;
+}
+
+    .nav-scrollable nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .nav-scrollable nav a {
+            display: flex;
+            text-decoration: none;
+            color: #d7d7d7;
+            border-radius: 4px;
+            padding: 0.75rem;
+            height: 3rem;
+            align-items: center;
+            margin: 0 0.5rem 0.5rem;
+        }
+
+            .nav-scrollable nav a.active {
+                background-color: rgba(255,255,255,0.25);
+                color: white;
+            }
+
+            .nav-scrollable nav a:hover {
+                background-color: rgba(255,255,255,0.1);
+                color: white;
+            }
+
+.bi {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    color: #d7d7d7;
+    vertical-align: text-top;
+}

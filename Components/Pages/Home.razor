@@ -1,4 +1,7 @@
-﻿@page "/"
+@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>CategoryAxisSample</PageTitle>
 
 <SfChart Width="60%">
     <ChartSeriesCollection>
@@ -9,10 +12,6 @@
         <ChartSeries Type="ChartSeriesType.Column" DataSource="@ChartData" XName="Country"
                      YName="Value">
         </ChartSeries>
-        @*<ChartSeries DataSource="@WeatherReports1" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
-        </ChartSeries>
-        <ChartSeries DataSource="@WeatherReports2" XName="Country" YName="Temperature" Type="ChartSeriesType.Column">
-        </ChartSeries>*@
         <ChartTooltipSettings Enable="true"></ChartTooltipSettings>
     </ChartSeriesCollection>
 </SfChart>
@@ -21,7 +20,7 @@
 
     public class ChartDataModel
     {
-        public string Country { get; set; }
+        public string? Country { get; set; }
         public double Value { get; set; }
         public double Temperature { get; set; }
     }
